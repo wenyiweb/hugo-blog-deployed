@@ -12,10 +12,17 @@
     
     <item>
       <title>Hugo搭建个人博客部署Github和gitcafe教程</title>
+<<<<<<< HEAD
       <link>http://blog.h5super.com/2015/11/12/hugopublish</link>
       <pubDate>Thu, 12 Nov 2015 17:09:44 +0800</pubDate>
       
       <guid>http://blog.h5super.com/2015/11/12/hugopublish</guid>
+=======
+      <link>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</link>
+      <pubDate>Thu, 12 Nov 2015 17:09:44 +0800</pubDate>
+      
+      <guid>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</guid>
+>>>>>>> 7cdc0f1ed7a8cddef624cba17c410fc209773691
       <description>
 
 &lt;p&gt;由于github拒绝Baiduspider，所以你的博客只能通过google搜索到，但是为了让不能使用google的但是又渴望学习的同学们也能看到你的博客，所以介绍一下gitcafe的部署，官方的文档写的很清楚&lt;a href=&#34;https://help.gitcafe.com/manuals/help/&#34;&gt;[官方文档]&lt;/a&gt;。&lt;/p&gt;
