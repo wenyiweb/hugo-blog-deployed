@@ -7,8 +7,132 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Copyright (c) 2015. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 12 Nov 2015 13:54:02 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2015 17:09:44 +0800</lastBuildDate>
     <atom:link href="http://blog.h5super.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo搭建个人博客部署Github和gitcafe教程</title>
+      <link>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</link>
+      <pubDate>Thu, 12 Nov 2015 17:09:44 +0800</pubDate>
+      
+      <guid>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</guid>
+      <description>
+
+&lt;p&gt;由于github拒绝Baiduspider，所以你的博客只能通过google搜索到，但是为了让不能使用google的但是又渴望学习的同学们也能看到你的博客，所以介绍一下gitcafe的部署，官方的文档写的很清楚&lt;a href=&#34;https://help.gitcafe.com/manuals/help/&#34;&gt;[官方文档]&lt;/a&gt;。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;GitCafe将以代码托管为核心业务，提供一系列优质前沿的服务来帮助到中国IT领域的开发者、项目以及企业更好地学习与成长。&lt;/p&gt;
+
+&lt;p&gt;Git是目前世界上最流行最优秀的项目版本控制系统之一，Cafe的意思为咖啡馆，象征着程序员文化。在GitCafe这个平台上，开发者可以轻松的在线协作共同开发出一个又一个开源或者私有项目。通过GitCafe，开发项目的控制与团队管理将变得方便与有效。&lt;/p&gt;
+
+&lt;p&gt;在GitCafe的网站以及团队，我希望每一个用户和员工都能感受到浓厚纯正的黑客精神与文化，发现和理解计算机技术的真正魅力与潜力，激励每一位中国的开发者去开发出更多更有趣的东西。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;安装-git:db839055729571645c8cfcdc34673612&#34;&gt;安装 GIT&lt;/h3&gt;
+
+&lt;p&gt;Windows 平台&lt;/p&gt;
+
+&lt;p&gt;下载 &lt;a href=&#34;https://msysgit.github.io/&#34;&gt;msysGit&lt;/a&gt; 进行安装。安装完成后可以在应用程序界面找到 Git Bash 和 Git GUI 两个软件；其中，Git Bash 是一个 Bash 的模拟环境，让 Windows 用户可以像 Linux / Unix 环境一样使用 Git 命令； Git GUI 是一个图形界面的 Git 管理工具，提供了很好的可视化 git diff差异比较。我们推荐从 Git Bash 入手学习 Git 的使用。
+&lt;img src=&#34;https://gitcafe-image.b0.upaiyun.com/423be76eeecff1b3cf0d7e83687bfb25.png&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Mac OS X 平台&lt;/p&gt;
+
+&lt;p&gt;下载 &lt;a href=&#34;https://github.com/timcharper/git_osx_installer/downloads&#34;&gt;Mac OS X 版本的 Git 安装包&lt;/a&gt;进行安装 。
+&amp;gt; 你可能会遇到这样的提示 xcode-select: note: no develper tools were found &amp;hellip; ，这说明你的 Mac 上 还没有安装 command line developer tools ，可以按照命令行的提示进行安装，或直接在命令行中输入 xcode-select &amp;ndash;install 回车后进行安装。&lt;/p&gt;
+
+&lt;p&gt;如果你的 Mac 之前安装了 homebrew ，可以直接输入 brew install git 进行安装。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Linux 平台&lt;/p&gt;
+
+&lt;p&gt;多数 Linux 发行版已经预编译 Git 的二进制包，可以通过包管理器直接安装。根据你使用的发行版，选择下面对应的命令进行安装。&lt;/p&gt;
+
+&lt;p&gt;Debian/Ubuntu apt-get install git
+&amp;gt; 如果你使用 Ubuntu 10.04、Debian 5.0（lenny）或更老的版本，请使用 apt-get install git-core命令进行安装。在老版本的 Debian 中，软件包 git 实际上是 GNU Interactive Tools ，而非我们熟知的版本控制系统。但由于 Git 的影响力越来越大，现在已经将 GNU Interactive Tools 改为 gnuit，git-core 正式改为 git。&lt;/p&gt;
+
+&lt;p&gt;Fedora / CentOS yum install git
+Gentoo emerge &amp;ndash;ask &amp;ndash;verbose dev-vcs/git
+Arch Linux pacman -S git&lt;/p&gt;
+
+&lt;h3 id=&#34;gitcafe-部署:db839055729571645c8cfcdc34673612&#34;&gt;Gitcafe 部署&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;创建SSH密钥：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mkdir ~/.ssh
+$ cd  ~/.ssh
+$ ssh-keygen -t rsa -C &amp;quot;YOUR_EMAIL@YOUREMAIL.COM&amp;quot;
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in ~/.ssh/id_rsa.
+Your public key has been saved in ~/.ssh/id_rsa.pub.
+The key fingerprint is:
+15:81:d2:7a:c6:6c:0f:ec:b0:b6:d4:18:b8:d1:41:48 YOUR_EMAIL@YOUREMAIL.COM
+$ cat id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后再Gitcafe中点击账户设置，新建SSH KEY，粘贴刚才打印的key&lt;/p&gt;
+
+&lt;p&gt;测试是否连接成功&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ssh -T git@gitcafe.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;按照提示输入yes。最后，如果出现这个提示&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Hi USERNAME! You&#39;ve successfully authenticated, but GitCafe does not provide shell access.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;恭喜你，连接成功。
+2. 提交项目&lt;/p&gt;
+
+&lt;p&gt;在Gitcafe上新建一个项目，例如，项目名为myblog。
+hugo教程请参考&lt;a href=&#34;http://blog.h5super.com/2015/11/10/hugoblog/&#34;&gt;Hugo+Github搭建个人博客图文教程&lt;/a&gt;
+本教程使用上一篇文章中创建的myblog。进入public目录，然后执行以下命令：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd  ~/.ssh
+$ ssh-keygen -t dsb -C &amp;quot;YOUR_EMAIL@YOUREMAIL.COM&amp;quot;
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+The key fingerprint is:
+$ cat id_dsb.pub
+# 到 Github 网站个人设置项里添加 SSH 公钥，随后测试是否能连接到 Github
+# 在 Github 网站新建 username.github.io 项目
+# cd 进入本地项目文件夹
+$ git remote add ghorigin git@github.com:username/username.github.io.git #添加远程仓库地址，ghorigin 指代 Github 远程仓库，区别于 Gitcafe 仓库的 origin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后打开gitcafe刚才创建的项目，点击继续按钮，将会看到push的所有文件。&lt;/p&gt;
+
+&lt;h3 id=&#34;github-部署:db839055729571645c8cfcdc34673612&#34;&gt;GitHub 部署&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;创建SSH密钥：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;方法个上面已经介绍过了，由于刚才创建的名字是id_rsa.pub已经被Gitcafe占用，这里用rds命名。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;提交项目&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Github部署，请参考&lt;a href=&#34;http://blog.h5super.com/2015/11/10/hugoblog/&#34;&gt;Hugo+Github搭建个人博客图文教程&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;域名解析:db839055729571645c8cfcdc34673612&#34;&gt;域名解析&lt;/h3&gt;
+
+&lt;p&gt;如果你使用个性域名，请参考该方法将域名同时只想Github和Gitcafe，使国内和国外用户自动访问gitcafe和github。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;asset/20151112.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>myPlan</title>
@@ -26,8 +150,6 @@ markdown语法&lt;a href=&#34;https://gitcafe.com/GitCafe/Help/wiki/Markdown-%E8
 
 &lt;p&gt;第一件事是系统的学习一下nodejs，做一个项目完结[计划一个半月时间]。
 计划不能太多，先一个一个实现。goodluck!&lt;/p&gt;
-
-&lt;h5 id=&#34;the-best-preparation-for-tomorrow-is-doing-your-best-today:67d417517df837737f56d399ab3d0cfe&#34;&gt;&lt;em&gt;The best preparation for tomorrow is doing your best today.&lt;/em&gt;&lt;/h5&gt;
 </description>
     </item>
     
@@ -191,8 +313,6 @@ $ git push -u origin master
 
 &lt;p&gt;参考文章：
   &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;HugoQuickstart Guide&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;the-best-preparation-for-tomorrow-is-doing-your-best-today:626830d4aaa11ec5f6cd4b088f8e8a8e&#34;&gt;&lt;em&gt;The best preparation for tomorrow is doing your best today.&lt;/em&gt;&lt;/h5&gt;
 </description>
     </item>
     
