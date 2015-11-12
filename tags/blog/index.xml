@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技术文章 on Kevin Blog</title>
-    <link>http://blog.h5super.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
-    <description>Recent content in 技术文章 on Kevin Blog</description>
+    <title>Blog on Kevin Blog</title>
+    <link>http://blog.h5super.com/tags/blog/</link>
+    <description>Recent content in Blog on Kevin Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Copyright (c) 2015. All rights reserved.</copyright>
     <lastBuildDate>Tue, 10 Nov 2015 16:07:41 +0800</lastBuildDate>
-    <atom:link href="http://blog.h5super.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.h5super.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugo&#43;Github搭建个人博客图文教程</title>

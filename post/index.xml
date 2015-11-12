@@ -7,8 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Copyright (c) 2015. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Nov 2015 16:07:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2015 13:54:02 +0800</lastBuildDate>
     <atom:link href="http://blog.h5super.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>myPlan</title>
+      <link>http://blog.h5super.com/2015/11/12/plan</link>
+      <pubDate>Thu, 12 Nov 2015 13:54:02 +0800</pubDate>
+      
+      <guid>http://blog.h5super.com/2015/11/12/plan</guid>
+      <description>
+
+&lt;p&gt;博客搭建告一段落，github和gitcafe都可以使用，还剩下一个自动化部署的功能需要添加。
+其实是一直想搭建一个自己的博客，看了hugo,jekyll,hexo等等,最后选择了hugo来实现，个人觉得hugo还是很简单的，只要会基本的
+markdown语法&lt;a href=&#34;https://gitcafe.com/GitCafe/Help/wiki/Markdown-%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5%E8%A1%A8#wiki&#34;&gt;[学习手册]&lt;/a&gt;，git的一些基本知识就可以了。&lt;/p&gt;
+
+&lt;h3 id=&#34;plan:67d417517df837737f56d399ab3d0cfe&#34;&gt;plan&lt;/h3&gt;
+
+&lt;p&gt;第一件事是系统的学习一下nodejs，做一个项目完结[计划一个半月时间]。
+计划不能太多，先一个一个实现。goodluck!&lt;/p&gt;
+
+&lt;h5 id=&#34;the-best-preparation-for-tomorrow-is-doing-your-best-today:67d417517df837737f56d399ab3d0cfe&#34;&gt;&lt;em&gt;The best preparation for tomorrow is doing your best today.&lt;/em&gt;&lt;/h5&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo&#43;Github搭建个人博客图文教程</title>
@@ -170,6 +191,8 @@ $ git push -u origin master
 
 &lt;p&gt;参考文章：
   &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;HugoQuickstart Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;the-best-preparation-for-tomorrow-is-doing-your-best-today:626830d4aaa11ec5f6cd4b088f8e8a8e&#34;&gt;&lt;em&gt;The best preparation for tomorrow is doing your best today.&lt;/em&gt;&lt;/h5&gt;
 </description>
     </item>
     
