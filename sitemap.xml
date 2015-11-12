@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.h5super.com/</loc>
+    <lastmod>2015-11-12T17:09:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</loc>
+    <lastmod>2015-11-12T17:09:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.h5super.com/2015/11/12/plan</loc>
+    <lastmod>2015-11-12T13:54:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.h5super.com/2015/11/10/hugoblog</loc>
+    <lastmod>2015-11-10T16:07:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.h5super.com/about/</loc>
+    <lastmod>2015-11-09T16:42:18+08:00</lastmod>
+  </url>
+  
+</urlset>
