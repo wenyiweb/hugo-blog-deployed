@@ -12,10 +12,10 @@
     
     <item>
       <title>Hugo搭建个人博客部署Github和gitcafe教程</title>
-      <link>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</link>
+      <link>http://blog.h5super.com/2015/11/12/hugopublish</link>
       <pubDate>Thu, 12 Nov 2015 17:09:44 +0800</pubDate>
       
-      <guid>http://blog.h5super.com/2015/11/12/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2github%E5%92%8Cgitcafe%E6%95%99%E7%A8%8B</guid>
+      <guid>http://blog.h5super.com/2015/11/12/hugopublish</guid>
       <description>
 
 &lt;p&gt;由于github拒绝Baiduspider，所以你的博客只能通过google搜索到，但是为了让不能使用google的但是又渴望学习的同学们也能看到你的博客，所以介绍一下gitcafe的部署，官方的文档写的很清楚&lt;a href=&#34;https://help.gitcafe.com/manuals/help/&#34;&gt;[官方文档]&lt;/a&gt;。&lt;/p&gt;
@@ -133,10 +133,6 @@ $ git remote add ghorigin git@github.com:username/username.github.io.git #添加
 &lt;/p&gt;
 </description>
     </item>
-    
-    <item>
-    <lastBuildDate>Tue, 10 Nov 2015 16:07:41 +0800</lastBuildDate>
-    <atom:link href="http://blog.h5super.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugo&#43;Github搭建个人博客图文教程</title>
@@ -298,11 +294,6 @@ $ git push -u origin master
 
 &lt;p&gt;参考文章：
   &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;HugoQuickstart Guide&lt;/a&gt;&lt;/p&gt;
-<<<<<<< HEAD
-=======
-
-&lt;h5 id=&#34;the-best-preparation-for-tomorrow-is-doing-your-best-today:626830d4aaa11ec5f6cd4b088f8e8a8e&#34;&gt;&lt;em&gt;The best preparation for tomorrow is doing your best today.&lt;/em&gt;&lt;/h5&gt;
->>>>>>> 34f2be5e86037e9453e66428d9154ad97556ee2f
 </description>
     </item>
     
