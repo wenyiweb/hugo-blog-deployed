@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书笔记 on Kevin Blog</title>
+    <link>http://blog.h5super.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 读书笔记 on Kevin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright (c) 2015. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 13 Nov 2015 11:31:12 +0800</lastBuildDate>
+    <atom:link href="http://blog.h5super.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>javascript学习笔记————对象</title>
+      <link>http://blog.h5super.com/2015/11/18/std-js-obj</link>
+      <pubDate>Fri, 13 Nov 2015 11:31:12 +0800</pubDate>
+      
+      <guid>http://blog.h5super.com/2015/11/18/std-js-obj</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
