@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rem on Kevin Blog</title>
+    <link>http://blog.h5super.com/tags/rem/</link>
+    <description>Recent content in Rem on Kevin Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright (c) 2015. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 23 Dec 2015 13:54:02 +0800</lastBuildDate>
+    <atom:link href="http://blog.h5super.com/tags/rem/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>移动端适配解决方案之rem</title>
+      <link>http://blog.h5super.com/2015/12/23/rem</link>
+      <pubDate>Wed, 23 Dec 2015 13:54:02 +0800</pubDate>
+      
+      <guid>http://blog.h5super.com/2015/12/23/rem</guid>
+      <description>
+
+&lt;p&gt;REM是CSS3引入的一个新的单位。在W3C官网上是这样描述rem的——“font size of the root element” 。下面我们就一起来详细的了解rem。&lt;/p&gt;
+
+&lt;h3 id=&#34;什么是rem:814cae6a22a02269994e2b6a8efce1c3&#34;&gt;什么是REM&lt;/h3&gt;
+
+&lt;p&gt;rem（font size of the root element）是指相对于根元素的字体大小的单位。简单的说它就是一个相对单位。看到rem大家一定会想起em单位，em（font size of the element）是指相对于父元素的字体大小的单位。它们之间其实很相似，只不过一个计算的规则是依赖根元素一个是依赖父元素计算。&lt;/p&gt;
+
+&lt;h3 id=&#34;为什么用在移动端:814cae6a22a02269994e2b6a8efce1c3&#34;&gt;为什么用在移动端&lt;/h3&gt;
+
+&lt;p&gt;出于兼容性的考虑，在pc端由于各个浏览器厂商对rem支持的错综复杂，有些还不支持，比如早起的ie6,ie7,ie8;但是在移动端就不存在兼容性问题了，可以放心大胆的使用。&lt;/p&gt;
+
+&lt;p&gt;###怎么使用
+1.在head中加入下面这段js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;!(function(doc, win) {
+    var docEle = doc.documentElement,
+        evt = &amp;quot;onorientationchange&amp;quot; in window ? &amp;quot;orientationchange&amp;quot; : &amp;quot;resize&amp;quot;,
+        fn = function() {
+            var width = docEle.clientWidth;
+            if(!width) return;
+            if(width&amp;gt;=640){
+                docEle.style.fontSize = 20 * (640 / 320) + &amp;quot;px&amp;quot;;
+            }else{
+                docEle.style.fontSize = 20 * (width / 320) + &amp;quot;px&amp;quot;;
+            }
+        };
+     
+    win.addEventListener(evt, fn, false);
+    doc.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, fn, false);
+ 
+}(document, window));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.css写法：
+设计稿中元素的宽高除(20 * (640 / 320)),单位用rem表示。&lt;/p&gt;
+
+&lt;p&gt;3.显示效果&lt;/p&gt;
+
+&lt;p&gt;iphone4：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xoasa.com1.z0.glb.clouddn.com/i4.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;iphone6：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xoasa.com1.z0.glb.clouddn.com/i6.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;iphone6s：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xoasa.com1.z0.glb.clouddn.com/i6p.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;安卓：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://7xoasa.com1.z0.glb.clouddn.com/ad.jpg&#34; alt=&#34;&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
